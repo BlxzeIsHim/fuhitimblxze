@@ -1,0 +1,105 @@
+/* Main CSS styles for Dark Mode */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+header, footer {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em; /* Increased size for prominence */
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.2); /* Soft shadow for depth */
+}
+
+input[type="text"] {
+    width: 80%; /* Responsive width */
+    max-width: 400px; /* Limit maximum width */
+    padding: 12px; /* More padding for comfort */
+    margin: 10px auto;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    background-color: #1e1e1e; /* Dark input background */
+    color: white;
+    font-size: 1.1em; /* Slightly larger text */
+    transition: background-color 0.3s; /* Smooth transition */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
+}
+
+input[type="text"]:focus {
+    background-color: #333; /* Highlight on focus */
+    outline: none;
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.2); /* Stronger shadow on focus */
+}
+
+button {
+    padding: 12px 20px; /* Increased padding for better clickability */
+    cursor: pointer;
+    background-color: #007bff; /* Button color */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1em; /* Larger text */
+    display: inline-block;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darken button on hover */
+    transform: scale(1.05); /* Slightly grow on hover */
+}
+
+.icon-container {
+    margin-top: 20px;
+    font-size: 30px; /* Slightly larger icons */
+}
+
+.icon {
+    margin-right: 15px;
+    color: white; /* Ensure icons are visible */
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background for popup */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #1e1e1e; /* Dark popup background */
+    color: white;
+    padding: 30px; /* More padding for a spacious feel */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2); /* Enhanced shadow for depth */
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 28px; /* Slightly larger close icon */
+    color: white;
+}
+
+.close:hover {
+    color: #ff4d4d; /* Change color on hover */
+}
